@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/add_note" android:id="@+id/menu_add_note" android:visible="true"
+          android:enabled="true" app:showAsAction="always"/>
+    <item android:title="@string/dep1" android:id="@+id/menu_dep1" android:visible="true" android:enabled="true"/>
+    <item android:title="@string/dep2" android:id="@+id/menu_dep2" android:visible="true" android:enabled="true"/>
+    <item android:title="@string/dep3" android:id="@+id/menu_dep3" android:visible="true" android:enabled="true"/>
+    <item android:title="@string/dep4" android:id="@+id/menu_dep4" android:visible="true" android:enabled="true"/>
+    <item android:title="@string/dep5" android:id="@+id/menu_dep5" android:visible="true" android:enabled="true"/>
+    <item android:title="@string/dep6" android:id="@+id/menu_dep6" android:visible="true" android:enabled="true"/>
+    <item android:title="@string/dep7" android:id="@+id/menu_dep7" android:visible="true" android:enabled="true"/>
+</menu>

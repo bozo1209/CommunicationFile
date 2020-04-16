@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_hub"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toStartOf="@+id/notes_list_market"
+            app:layout_constraintHorizontal_bias="0.0" tools:text="hub"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_market" app:layout_constraintEnd_toStartOf="@+id/notes_list_date"
+            app:layout_constraintBaseline_toBaselineOf="@+id/notes_list_hub"
+            app:layout_constraintStart_toEndOf="@+id/notes_list_hub" tools:text="xx-xxxx-xxxx-xx"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_date" app:layout_constraintEnd_toStartOf="@+id/notes_list_month_apply"
+            app:layout_constraintBaseline_toBaselineOf="@+id/notes_list_market"
+            app:layout_constraintStart_toEndOf="@+id/notes_list_market" tools:text="xx-xx-xxxx"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_month_apply" app:layout_constraintEnd_toStartOf="@+id/notes_list_package"
+            app:layout_constraintBaseline_toBaselineOf="@+id/notes_list_date"
+            app:layout_constraintStart_toEndOf="@+id/notes_list_date" tools:text="00"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_package" app:layout_constraintEnd_toStartOf="@+id/notes_list_priority"
+            app:layout_constraintBaseline_toBaselineOf="@+id/notes_list_month_apply"
+            app:layout_constraintStart_toEndOf="@+id/notes_list_month_apply" tools:text="xxxxxxxxxx"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_priority" app:layout_constraintEnd_toStartOf="@+id/notes_list_status_cc"
+            app:layout_constraintBaseline_toBaselineOf="@+id/notes_list_package"
+            app:layout_constraintStart_toEndOf="@+id/notes_list_package" tools:text="priority"
+    />
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_problem" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/notes_list_hub"
+            app:layout_constraintStart_toStartOf="@+id/notes_list_hub"
+            app:layout_constraintEnd_toEndOf="@+id/notes_list_package" tools:text="problem"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_person_reporting"
+            app:layout_constraintBaseline_toBaselineOf="@+id/notes_list_status_inv"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/notes_list_status_inv" tools:text="x-x[xxx]"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_status_cc" app:layout_constraintEnd_toStartOf="@+id/notes_list_tl"
+            app:layout_constraintBaseline_toBaselineOf="@+id/notes_list_priority"
+            app:layout_constraintStart_toEndOf="@+id/notes_list_priority" tools:text="status"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_comment_cc"
+            app:layout_constraintTop_toBottomOf="@+id/notes_list_status_cc"
+            app:layout_constraintStart_toStartOf="@+id/notes_list_status_cc" android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/notes_list_tl" tools:text="comment"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_status_inv"
+            app:layout_constraintEnd_toStartOf="@+id/notes_list_person_reporting"
+            app:layout_constraintBaseline_toBaselineOf="@+id/notes_list_tl"
+            app:layout_constraintStart_toEndOf="@+id/notes_list_tl" tools:text="status"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_comment_inv"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/notes_list_status_inv"
+            app:layout_constraintStart_toStartOf="@+id/notes_list_status_inv"
+            app:layout_constraintEnd_toEndOf="@+id/notes_list_person_reporting" tools:text="comment"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_problem_cause"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/notes_list_priority"
+            app:layout_constraintStart_toStartOf="@+id/notes_list_priority" tools:text="couse"
+            app:layout_constraintEnd_toStartOf="@+id/notes_list_status_cc" android:layout_marginEnd="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_list_tl" app:layout_constraintEnd_toStartOf="@+id/notes_list_status_inv"
+            app:layout_constraintBaseline_toBaselineOf="@+id/notes_list_status_cc"
+            app:layout_constraintStart_toEndOf="@+id/notes_list_status_cc" tools:text="team leader"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
